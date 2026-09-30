@@ -1,0 +1,20 @@
+# Python virtual environment and cache
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Local database
+backend/pramana.db
+
+# Secret configuration files
+backend/.env
+frontend/.env
+
+# React dependencies and generated build files
+frontend/node_modules/
+frontend/dist/
+
+# VS Code and system files
+.vscode/
+.DS_Store
+Thumbs.db
