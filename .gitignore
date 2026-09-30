@@ -1,0 +1,20 @@
+# Do not upload Python environment files
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Do not upload local SQLite database
+backend/pramana.db
+
+# Do not upload secrets
+backend/.env
+frontend/.env
+
+# Do not upload downloaded React packages
+frontend/node_modules/
+frontend/dist/
+
+# Do not upload editor/system files
+.vscode/
+.DS_Store
+Thumbs.db

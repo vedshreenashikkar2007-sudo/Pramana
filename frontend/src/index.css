@@ -1,0 +1,289 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #eaf0ff;
+  background: #09111f;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(95, 91, 255, 0.18), transparent 30%),
+    radial-gradient(circle at 85% 20%, rgba(0, 202, 160, 0.14), transparent 25%),
+    #09111f;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  width: min(1160px, 92%);
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0 24px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 2.15rem;
+}
+
+.topbar p {
+  color: #aebad2;
+  margin: 6px 0 0;
+}
+
+.session-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.online {
+  background: rgba(12, 196, 133, 0.15);
+  color: #83f3bf;
+  border: 1px solid rgba(131, 243, 191, 0.35);
+}
+
+.offline {
+  background: rgba(255, 255, 255, 0.06);
+  color: #c5cfdf;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.nav button,
+.secondary-button {
+  color: #dce7ff;
+  background: #16233b;
+  border: 1px solid #2a3a58;
+  border-radius: 9px;
+  padding: 10px 14px;
+}
+
+.nav button:hover,
+.secondary-button:hover {
+  background: #213457;
+}
+
+.primary-button {
+  color: #07101e;
+  background: linear-gradient(135deg, #82f7c7, #7da9ff);
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 16px;
+  font-weight: 800;
+}
+
+.primary-button:hover {
+  filter: brightness(1.08);
+}
+
+.message {
+  margin: 0 0 18px;
+  background: rgba(116, 164, 255, 0.14);
+  border: 1px solid rgba(116, 164, 255, 0.35);
+  color: #dce9ff;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.hero-card,
+.page-card,
+.info-card {
+  background: rgba(15, 27, 48, 0.92);
+  border: 1px solid #263b61;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+}
+
+.hero-card {
+  padding: 44px;
+}
+
+.hero-card h2 {
+  font-size: clamp(2rem, 5vw, 3.45rem);
+  line-height: 1.08;
+  max-width: 800px;
+  margin: 12px 0 18px;
+}
+
+.hero-card p,
+.info-card p,
+.page-card p,
+.page-card li {
+  color: #c4cee0;
+  line-height: 1.65;
+}
+
+.eyebrow {
+  color: #84f5c5 !important;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.info-card,
+.page-card {
+  padding: 26px;
+}
+
+.info-card h3,
+.page-card h3 {
+  color: #90b8ff;
+}
+
+.wallet-form,
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #cfd9ea;
+  font-weight: 700;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  background: #091526;
+  color: #eef4ff;
+  border: 1px solid #2c426b;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+textarea {
+  min-height: 105px;
+  resize: vertical;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #2a3d62;
+  margin: 28px 0;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.approved {
+  background: rgba(22, 177, 118, 0.12);
+  border: 1px solid rgba(92, 232, 163, 0.44);
+}
+
+.denied {
+  background: rgba(225, 82, 100, 0.12);
+  border: 1px solid rgba(255, 127, 139, 0.44);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 13px;
+  border-bottom: 1px solid #24395c;
+  color: #cbd6e7;
+}
+
+th {
+  color: #91b9ff;
+}
+
+.decision {
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.approved-pill {
+  background: rgba(71, 215, 143, 0.17);
+  color: #8cf3be;
+}
+
+.denied-pill {
+  background: rgba(239, 91, 107, 0.18);
+  color: #ffabb4;
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card,
+  .page-card {
+    padding: 24px;
+  }
+}
